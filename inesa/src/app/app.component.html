@@ -1,1 +1,33 @@
-<app-tool-bar></app-tool-bar>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+        <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <app-tool-bar (sidenavToggle)="sidenav.toggle()"></app-tool-bar>
+        <main>
+            <router-outlet></router-outlet>
+        </main>
+        <footer style="background-color:#1269b9">
+            <div>
+                <mat-grid-list cols="3" rowHeight="100px">
+                    <mat-grid-tile
+                        [colspan]="1"
+                        [rowspan]="2">
+                      <img src="../assets/INECMYK BLANCO.svg" style="height:80px">
+                    </mat-grid-tile>
+                    <mat-grid-tile
+                        [colspan]="2"
+                        [rowspan]="2" style="color:white">
+                      <div style="display:block">
+                          <p><strong>Integración Negocios Empresariales</strong></p>
+                          <br>
+                          <p><strong>Dirección:</strong> Av. Diaz Velez 1023</p>
+                          <br>
+                          <p><strong>Email:</strong> ff.inesa@gmail.com</p>
+                      </div>
+                    </mat-grid-tile>
+                  </mat-grid-list>
+            </div>
+        </footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -11,14 +11,24 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatListModule } from '@angular/material/list';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 /*Components*/
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
+import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
+import { HomeComponent } from './home/home.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolBarComponent
+    ToolBarComponent,
+    SidenavListComponent,
+    HomeComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +39,16 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
     MatMenuModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatSidenavModule,
+    MatTabsModule,
+    MatListModule,
+    MatGridListModule
+  ],
+  exports:[
+    MatSidenavModule,
+    MatTabsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

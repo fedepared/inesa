@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { MenuItem } from '../Interfaces/menu-item';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-tool-bar',
@@ -7,55 +6,17 @@ import { MenuItem } from '../Interfaces/menu-item';
   styleUrls: ['./tool-bar.component.sass']
 })
 export class ToolBarComponent implements OnInit {
-
-  menuItems: MenuItem[] = [
-    {
-      label: 'Sign Up',
-      icon: 'login',
-      showOnMobile: false,
-      showOnTablet: false,
-      showOnDesktop: true
-    },
-    {
-      label: 'About',
-      icon: 'help',
-      showOnMobile: false,
-      showOnTablet: false,
-      showOnDesktop: true
-    },
-    {
-      label: 'Pricing',
-      icon: 'attach_money',
-      showOnMobile: false,
-      showOnTablet: false,
-      showOnDesktop: true
-    },
-    {
-      label: 'Docs',
-      icon: 'notes',
-      showOnMobile: false,
-      showOnTablet: false,
-      showOnDesktop: true
-    },
-    {
-      label: 'Showcase',
-      icon: 'slideshow',
-      showOnMobile: false,
-      showOnTablet: false,
-      showOnDesktop: true
-    },
-    {
-      label: 'Blog',
-      icon: 'rss_feed',
-      showOnMobile: false,
-      showOnTablet: false,
-      showOnDesktop: true
-    },
-  ];
   
+  @Output() public sidenavToggle = new EventEmitter();
+ 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public onToggleSidenav = () => { 
+    this.sidenavToggle.emit();
+
   }
 
 }

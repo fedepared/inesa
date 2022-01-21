@@ -1,0 +1,23 @@
+<body>
+    <div *ngIf="state" [@enter]="{ value: '', params: { duration: 5000, delay:0 } }" id="firstImage" >
+        <h2 *ngIf="state" [@enter]="{ value: '', params: { duration: 5000 } }">
+            INESA, brindando soluciones informáticas desde 1930
+        </h2>
+    </div>
+    <div>
+        <mat-grid-list cols="4">
+            <mat-grid-tile [colspan]="1">
+                <mat-icon>handyman</mat-icon>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1">
+                <mat-icon>settings</mat-icon>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1">
+                <mat-icon>build</mat-icon>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1">
+                <mat-icon>delivery_dining</mat-icon>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</body>
