@@ -15,12 +15,16 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card'
 
 /*Components*/
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+
+//NPM Packages
+import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
 
 @NgModule({
   declarations: [
@@ -43,12 +47,16 @@ import { AboutUsComponent } from './about-us/about-us.component';
     MatSidenavModule,
     MatTabsModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    MatCardModule,
+    NgxWhastappButtonModule
   ],
   exports:[
     MatSidenavModule,
     MatTabsModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    NgxWhastappButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,23 +1,61 @@
 <body>
     <div *ngIf="state" [@enter]="{ value: '', params: { duration: 5000, delay:0 } }" id="firstImage" >
-        <h2 *ngIf="state" [@enter]="{ value: '', params: { duration: 5000 } }">
-            INESA, brindando soluciones informáticas desde 1930
-        </h2>
+        
+            <h1 *ngIf="state" [@enter]="{ value: '', params: { duration: 5000 } }">
+                INESA, brindando soluciones informáticas desde 1930
+            </h1>
     </div>
-    <div>
-        <mat-grid-list cols="4">
+    <div >
+        <mat-grid-list cols="4" gutterSize="40px">
             <mat-grid-tile [colspan]="1">
-                <mat-icon>handyman</mat-icon>
+                <mat-card class="example-card">
+                    <mat-card-title align="center"><mat-icon>handyman</mat-icon></mat-card-title>
+                    <br>
+                    <mat-card-content>
+                      <h4>Servicio técnico personalizado</h4>
+                      <p>
+                        Ofrecemos la mejor atención para sus necesidades a través de soluciones rápidas y eficaces
+                      </p>
+                    </mat-card-content>
+                </mat-card>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1">
-                <mat-icon>settings</mat-icon>
+              <mat-card class="example-card">
+                <mat-card-title align="center"><mat-icon>delivery_dining</mat-icon></mat-card-title>
+                <br>
+                <mat-card-content>
+                  <h4>200 Clientes</h4>
+                  <p>
+                    Trabajamos con más de doscientos clientes en todo el país
+                  </p>
+                </mat-card-content>
+              </mat-card>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1">
-                <mat-icon>build</mat-icon>
+              <mat-card class="example-card">
+                <mat-card-title align="center"><mat-icon>build</mat-icon></mat-card-title>
+                <br>
+                <mat-card-content>
+                  <h4>Servicio técnico personalizado</h4>
+                  <p>
+                    Ofrecemos la mejor atención para sus necesidades a través de soluciones rápidas y eficaces
+                  </p>
+                </mat-card-content>
+              </mat-card>
             </mat-grid-tile>
             <mat-grid-tile [colspan]="1">
-                <mat-icon>delivery_dining</mat-icon>
+              <mat-card class="example-card">
+                <mat-card-title align="center"><mat-icon>settings</mat-icon></mat-card-title>
+                <br>
+                <mat-card-content>
+                  <h4>Servicio técnico personalizado</h4>
+                  <p>
+                    Ofrecemos la mejor atención para sus necesidades a través de soluciones rápidas y eficaces
+                  </p>
+                </mat-card-content>
+              </mat-card>
             </mat-grid-tile>
         </mat-grid-list>
     </div>
+    <a href="https://listado.mercadolibre.com.ar/_CustId_203804413"></a>
 </body>

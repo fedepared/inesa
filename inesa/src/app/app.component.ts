@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'inesa';
+  public phone = "5491150638662"
+  public text = "Deseo comunicarme con ustedes para atención personalizada";
 }
