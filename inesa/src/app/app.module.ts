@@ -25,6 +25,10 @@ import { AboutUsComponent } from './about-us/about-us.component';
 
 //NPM Packages
 import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
+import { AnimateComponent } from './animate/animate.component';
+import { AnimateDirective } from './animate/animate.directive';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +36,9 @@ import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
     ToolBarComponent,
     SidenavListComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    AnimateComponent,
+    AnimateDirective
   ],
   imports: [
     BrowserModule,
@@ -49,7 +55,8 @@ import { NgxWhastappButtonModule } from "ngx-whatsapp-button";
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    NgxWhastappButtonModule
+    NgxWhastappButtonModule,
+    SlickCarouselModule
   ],
   exports:[
     MatSidenavModule,

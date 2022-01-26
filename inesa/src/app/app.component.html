@@ -9,6 +9,18 @@
             <router-outlet></router-outlet>
             <jjva-ngx-whatsapp-button  [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="text"></jjva-ngx-whatsapp-button>
         </main>
+        <div>
+            <ngx-slick-carousel class="carousel" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig" 
+                    (init)="slickInit($event)"
+                    
+                    >
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <img src="{{ slide.img }}" alt="" width="50%">
+            </div>
+            </ngx-slick-carousel>
+        </div>
         <footer style="background-color:#1269b9">
             <div>
                 <mat-grid-list cols="3" rowHeight="100px">

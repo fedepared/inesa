@@ -9,4 +9,11 @@ export class AppComponent {
   title = 'inesa';
   public phone = "5491150638662"
   public text = "Deseo comunicarme con ustedes para atención personalizada";
+
+  slides = [
+    {img: "assets/coninAgro.png"},
+    {img: "assets/crestonGrains.png"},
+    {img: "assets/transElect.png"},
+  ];
+  slideConfig = {"slidesToShow": 3, "slidesToScroll": 3};
 }

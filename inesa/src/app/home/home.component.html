@@ -1,13 +1,14 @@
 <body>
+  <div>
+
     <div *ngIf="state" [@enter]="{ value: '', params: { duration: 5000, delay:0 } }" id="firstImage" >
         
             <h1 *ngIf="state" [@enter]="{ value: '', params: { duration: 5000 } }">
-                INESA, brindando soluciones informáticas desde 1930
+                Integración Negocios Empresariales
             </h1>
     </div>
-    <div >
-        <mat-grid-list cols="4" gutterSize="40px">
-            <mat-grid-tile [colspan]="1">
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px" fxLayout.xs="column" wmAnimate="fadeInUp" speed="slow" aos class="container">
+        
                 <mat-card class="example-card">
                     <mat-card-title align="center"><mat-icon>handyman</mat-icon></mat-card-title>
                     <br>
@@ -18,8 +19,7 @@
                       </p>
                     </mat-card-content>
                 </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1">
+            
               <mat-card class="example-card">
                 <mat-card-title align="center"><mat-icon>delivery_dining</mat-icon></mat-card-title>
                 <br>
@@ -30,8 +30,6 @@
                   </p>
                 </mat-card-content>
               </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1">
               <mat-card class="example-card">
                 <mat-card-title align="center"><mat-icon>build</mat-icon></mat-card-title>
                 <br>
@@ -42,8 +40,6 @@
                   </p>
                 </mat-card-content>
               </mat-card>
-            </mat-grid-tile>
-            <mat-grid-tile [colspan]="1">
               <mat-card class="example-card">
                 <mat-card-title align="center"><mat-icon>settings</mat-icon></mat-card-title>
                 <br>
@@ -54,8 +50,6 @@
                   </p>
                 </mat-card-content>
               </mat-card>
-            </mat-grid-tile>
-        </mat-grid-list>
     </div>
-    <a href="https://listado.mercadolibre.com.ar/_CustId_203804413"></a>
+  </div>
 </body>
