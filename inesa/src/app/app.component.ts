@@ -1,3 +1,4 @@
+import { TransitiveCompileNgModuleMetadata } from '@angular/compiler';
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,10 +11,20 @@ export class AppComponent {
   public phone = "5491150638662"
   public text = "Deseo comunicarme con ustedes para atención personalizada";
 
+  slickInit(event){
+    console.log(event)
+  }
+
   slides = [
-    {img: "assets/coninAgro.png"},
-    {img: "assets/crestonGrains.png"},
-    {img: "assets/transElect.png"},
+    {img: "assets/coninAgroPaint.png"},
+    {img: "assets/crestonGrainsPaint.png"},
+    {img: "assets/transElectPaint.png"},
   ];
-  slideConfig = {"slidesToShow": 3, "slidesToScroll": 3};
+  slideConfig = {
+    "autoplay":true,
+    "autoplaySpeed":2000,
+    "slidesToShow": 1, 
+    "slidesToScroll": 1,
+
+  };
 }

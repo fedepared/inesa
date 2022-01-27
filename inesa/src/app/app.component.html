@@ -10,16 +10,29 @@
             <jjva-ngx-whatsapp-button  [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="text"></jjva-ngx-whatsapp-button>
         </main>
         <div>
-            <ngx-slick-carousel class="carousel" 
-                    #slickModal="slick-carousel" 
-                    [config]="slideConfig" 
-                    (init)="slickInit($event)"
-                    
-                    >
-            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                <img src="{{ slide.img }}" alt="" width="50%">
-            </div>
-            </ngx-slick-carousel>
+            <mat-card align="center" id="carousel">
+                <mat-card-title><h2><span  style="
+                    background-image: linear-gradient(0.25turn, #00a6a7, #0065ab);
+                    background-color: #00a6a7;
+                    background-size: 100%;
+                    background-repeat: repeat;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; 
+                    -moz-background-clip: text;
+                    -moz-text-fill-color: transparent;
+                 ">Nuestros clientes:</span></h2></mat-card-title>
+                <br>
+                <mat-card-content>
+                    <ngx-slick-carousel class="carousel" 
+                            #slickModal="slick-carousel" 
+                            [config]="slideConfig"
+                            >
+                        <div ngxSlickItem  *ngFor="let slide of slides" class="slide">
+                            <img src="{{ slide.img }}" alt="" width="100%">
+                        </div>
+                    </ngx-slick-carousel>
+                </mat-card-content>
+            </mat-card>
         </div>
         <footer style="background-color:#1269b9">
             <div>
