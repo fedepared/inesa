@@ -7,7 +7,7 @@
         <main style="margin-top:90px;">
 
             <router-outlet></router-outlet>
-            <jjva-ngx-whatsapp-button  [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="text"></jjva-ngx-whatsapp-button>
+            <jjva-ngx-whatsapp-button  [ngx_whatsapp_phone]="phone" [ngx_whatsapp_text]="text" style="z-index:10;"></jjva-ngx-whatsapp-button>
         </main>
         <div>
             <mat-card align="center" id="carousel">
@@ -34,7 +34,7 @@
                 </mat-card-content>
             </mat-card>
         </div>
-        <footer style="background-color:#1269b9">
+        <footer style="background-color:rgb(78 123 131)">
             <div>
                 <mat-grid-list cols="3" rowHeight="100px">
                     <mat-grid-tile
